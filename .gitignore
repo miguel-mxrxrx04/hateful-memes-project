@@ -1,0 +1,32 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Datos y descargas pesadas
+data/raw/img/
+data/raw/*.jsonl
+data/raw/LICENSE.txt
+data/raw/README.md
+data/features/*.pt
+data/processed/
+*.zip
+
+# Pesos de modelos y checkpoints
+models/weights/*.pt
+models/weights/*.pth
+models/weights/*.bin
+models/weights/*.safetensors
+
+# Cachés y temporales
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.DS_Store
+
+# Mantener la estructura de carpetas en Git
+!data/raw/.gitkeep
+!data/features/.gitkeep
+!data/processed/.gitkeep
+!models/weights/.gitkeep
