@@ -1,32 +1,26 @@
-# Entornos virtuales
+# Entornos y caché de Python
 venv/
 .venv/
-env/
-
-# Datos y descargas pesadas
-data/raw/img/
-data/raw/*.jsonl
-data/raw/LICENSE.txt
-data/raw/README.md
-data/features/*.pt
-data/processed/
-*.zip
-
-# Pesos de modelos y checkpoints
-models/weights/*.pt
-models/weights/*.pth
-models/weights/*.bin
-models/weights/*.safetensors
-
-# Cachés y temporales
 __pycache__/
 *.py[cod]
+.pytest_cache/
 .ipynb_checkpoints/
-.vscode/
-.DS_Store
 
-# Mantener la estructura de carpetas en Git
+# Datos pesados, tensores y pesos binarios
+data/raw/*
 !data/raw/.gitkeep
+data/features/*
 !data/features/.gitkeep
+data/processed/*
 !data/processed/.gitkeep
+models/weights/*
 !models/weights/.gitkeep
+models/onnx/*
+!models/onnx/.gitkeep
+
+# Logs y métricas temporales
+logs/*
+!logs/.gitkeep
+results/metrics/*.json
+results/metrics/*.csv
+!results/metrics/.gitkeep
